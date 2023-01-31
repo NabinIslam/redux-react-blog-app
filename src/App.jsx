@@ -1,12 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { RouterProvider } from 'react-router-dom';
 import store from './redux/store';
+import router from './routes/router';
 
 const App = () => {
   return (
     <div>
       <Provider store={store}>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <RouterProvider router={router} />
       </Provider>
     </div>
   );
