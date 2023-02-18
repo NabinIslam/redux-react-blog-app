@@ -22,8 +22,14 @@ const Header = () => {
             <Link to="/">
               <Navbar.Link>Home</Navbar.Link>
             </Link>
+            <Link to="/reading-history">
+              <Navbar.Link>Reading History</Navbar.Link>
+            </Link>
             <Link to="/post-blog">
               <Navbar.Link>Post Blog</Navbar.Link>
+            </Link>
+            <Link to="/delete-blog">
+              <Navbar.Link>Delete Blog</Navbar.Link>
             </Link>
           </Navbar.Collapse>
         </Navbar>

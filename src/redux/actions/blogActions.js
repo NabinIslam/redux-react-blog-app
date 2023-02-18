@@ -18,3 +18,17 @@ export const fetchBlog = data => {
     payload: data,
   };
 };
+
+export const deleteBlog = id => {
+  return {
+    type: DELETE_CONTENT,
+    payload: id,
+  };
+};
+
+export const editBlog = id => {
+  return {
+    type: UPDATE_CONTENT,
+    payload: id,
+  };
+};
