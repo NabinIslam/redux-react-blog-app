@@ -10,12 +10,9 @@ const BlogDetails = () => {
     fetch(`http://localhost:5000/blogs/${id}`)
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         setBlog(data);
       });
   }, []);
-
-  console.log(blog);
 
   return (
     <div>

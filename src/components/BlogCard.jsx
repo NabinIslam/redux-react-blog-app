@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Button, Card } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import BlogEditModal from './BlogEditModal';
+import { useDispatch } from 'react-redux';
+import { addToHistory } from '../redux/actions/blogActions';
 
 const BlogCard = ({ blog }) => {
   const { title, desc, date, _id } = blog;
 
   const [open, setOpen] = useState(false);
+
+  const dispatch = useDispatch();
 
   return (
     <Card>
@@ -20,7 +24,7 @@ const BlogCard = ({ blog }) => {
         <span className="font-semibold">Published:</span> {date}
       </p>
       <Link to={`/${_id}`}>
-        <Button>
+        <Button onClick={() => dispatch(addToHistory(blog))}>
           Read more
           <svg
             className="ml-2 -mr-1 h-4 w-4"

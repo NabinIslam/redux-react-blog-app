@@ -3,6 +3,7 @@ import {
   GET_CONTENT,
   UPDATE_CONTENT,
   DELETE_CONTENT,
+  ADD_TO_HISTORY,
 } from '../actionTypes/actionTypes';
 
 export const addBlog = data => {
@@ -30,5 +31,12 @@ export const editBlog = id => {
   return {
     type: UPDATE_CONTENT,
     payload: id,
+  };
+};
+
+export const addToHistory = blog => {
+  return {
+    type: ADD_TO_HISTORY,
+    payload: blog,
   };
 };

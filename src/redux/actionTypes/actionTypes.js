@@ -5,3 +5,6 @@ export const DELETE_CONTENT = 'DELETE_CONTENT';
 
 export const TOGGLE_LATEST = 'TOGGLE_LATEST';
 export const TOGGLE_OLDEST = 'TOGGLE_OLDEST';
+
+export const ADD_TO_HISTORY = "ADD_TO_HISTORY";
+
