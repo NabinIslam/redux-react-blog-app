@@ -7,7 +7,7 @@ const BlogDetails = () => {
   const [blog, setBlog] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blogs/${id}`)
+    fetch(`https://redux-blog-server-ten.vercel.app/blogs/${id}`)
       .then(res => res.json())
       .then(data => {
         setBlog(data);

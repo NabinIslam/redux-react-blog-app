@@ -2,7 +2,7 @@ import { editBlog } from '../../actions/blogActions';
 
 const updateBlogs = (updatedBlog, form, id) => {
   return (dispatch, getState) => {
-    fetch(`http://localhost:5000/blogs/${id}`, {
+    fetch(`https://redux-blog-server-ten.vercel.app/blogs/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',

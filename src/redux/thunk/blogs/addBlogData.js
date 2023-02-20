@@ -2,7 +2,7 @@ import { addBlog } from '../../actions/blogActions';
 
 const addBlogData = (blog, form) => {
   return async (dispatch, getState) => {
-    const res = await fetch('http://localhost:5000/blogs', {
+    const res = await fetch('https://redux-blog-server-ten.vercel.app/blogs', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

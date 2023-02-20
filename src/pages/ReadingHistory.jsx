@@ -5,8 +5,6 @@ import BlogCard from '../components/BlogCard';
 const ReadingHistory = () => {
   const historys = useSelector(state => state.blog.historys);
 
-  console.log(historys);
-
   return (
     <div>
       <div className="container mx-auto">

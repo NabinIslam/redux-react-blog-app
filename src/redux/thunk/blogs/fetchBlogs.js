@@ -1,8 +1,8 @@
-import { fetchBlog } from "../../actions/blogActions";
+import { fetchBlog } from '../../actions/blogActions';
 
 const fetchBlogs = () => {
   return async (dispatch, getState) => {
-    fetch('http://localhost:5000/blogs')
+    fetch('https://redux-blog-server-ten.vercel.app/blogs')
       .then(res => res.json())
       .then(data => {
         dispatch(fetchBlog(data));

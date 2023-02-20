@@ -7,16 +7,9 @@ const Header = () => {
     <div className="shadow">
       <div className="container mx-auto">
         <Navbar fluid={true} rounded={true}>
-          <Navbar.Brand to="/navbars">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-3 h-6 sm:h-9"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-              Flowbite
-            </span>
-          </Navbar.Brand>
+          <Link to="/">
+            <h2 className='font-extrabold text-xl'>Redux Blog</h2>
+          </Link>
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Link to="/">

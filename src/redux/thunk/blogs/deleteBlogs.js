@@ -2,7 +2,7 @@ import { deleteBlog } from '../../actions/blogActions';
 
 const deleteBlogs = id => {
   return async (dispatch, getState) => {
-    fetch(`http://localhost:5000/blogs/${id}`, {
+    fetch(`https://redux-blog-server-ten.vercel.app/blogs/${id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())
